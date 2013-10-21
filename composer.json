@@ -1,0 +1,21 @@
+{
+ "name": "mesingh/envato-api",
+ "type": "library",
+ "description": "This is a PHP wrapper class for the Envato marketplaces - like themeforest.net.",
+ "keywords": ["envato","themeforest","codecanyon","activeden","graphicriver","api"],
+ "homepage": "https://github.com/meSingh/Envato-Marketplace-API-Wrapper-in-PHP",
+ "license": "MIT",
+ "authors": [
+        {
+            "name": "Mandeep Singh",
+            "email": "mandeep@websterfolks.com",
+            "homepage": "http://www.msingh.me"
+        }
+    ], 
+    "require": {
+        "php": ">=5.1.0"        
+    },
+    "autoload": {
+        "files": [ "Envato_marketplaces.php" ]
+    }
+}
