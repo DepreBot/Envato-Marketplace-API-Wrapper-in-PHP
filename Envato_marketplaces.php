@@ -203,6 +203,23 @@ class Envato_marketplaces {
       }
    }
 
+   /**
+   * Returns random new files from a specific marketplace.
+   *
+   * @param string $marketplace_name The desired marketplace name.
+   * @param int $limit The number of files to return.
+   * @return array A list of ALL recent files.
+   */
+   public function random_new_files($marketplace_name = 'themeforest', $limit = null)
+   {
+      $url = preg_replace('/set/i', 'random-new-files:' . $marketplace_name, $this->public_url);
+      $results = $this->fetch($url, 'random-new-files');
+
+      if ( $results ) {
+         return $this->apply_limit($results, $limit);
+      }
+   }
+
   /**
    * Similar to new_files, but focuses on a specific author's files.
    *
